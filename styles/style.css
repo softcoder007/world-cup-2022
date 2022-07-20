@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Google font useing here */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .container {
@@ -61,14 +62,12 @@
 }
 
 .transfer-lives {
-    width: 312px;
-    height: 330px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 24px;
     row-gap: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-left: 150px;
     margin-right: 100px;
 }
@@ -76,25 +75,66 @@
 
 
 .transfer-live {
-    border: 1px solid grey;
+    width: 312px;
+    height: 330px;
+    border: 1px solid rgba(128, 128, 128, 0.387);
     border-radius: 10px;
 }
 
-.transfer-live transfer-banner img {
+.transfer-banner {
     width: 312px;
     height: 175px;
 }
 
 .transfer-btn {
     margin-top: 20px;
+    margin-left: 10px;
+    background-color: white;
+}
+
+.btn {
+    padding: 3px 10px;
 }
 
 .transfer-info {
     margin-top: 15px;
+    margin-left: 10px;
 }
 
 .transfer-details {
     display: flex;
     gap: 30px;
     margin-top: 20px;
+    margin-left: 10px;
+}
+
+footer {
+    padding: 30px 30px;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+#footer-heading {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #B9B9B9;
+    margin-right: 10px;
+    font-weight: 300px;
 }
