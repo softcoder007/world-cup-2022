@@ -7,6 +7,7 @@
 /* Google font useing here */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+/* Banner Section design start here */
 .container {
     height: 100vh;
     display: flex;
@@ -41,7 +42,6 @@
 
 .banner-btn>button {
     border-radius: 5px;
-    border: none;
     color: white;
     background-color: red;
     padding: 10px 22px;
@@ -50,6 +50,16 @@
     font-size: 16px;
     margin: 4px 2px;
     margin-top: 30px;
+}
+
+.banner-btn>button:hover {
+    background-color: #3e8e41
+}
+
+.banner-btn>button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px rgb(179, 166, 166);
+    transform: translateY(4px);
 }
 
 .banner-image {
@@ -61,15 +71,64 @@
 
 }
 
+/* Live Section Design Start Here */
+
 .transfer-lives {
-    display: grid;
+    display: flex;
+    justify-content: center;
+}
+
+.left-corner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    margin-left: 38px;
+    width: 200px;
+    height: 200px;
+    background-color: #ccababf0;
+    border: 1px solid rgb(14, 14, 14);
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.left-corner button {
+    width: 120px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    color: #161616;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.left-corner a {
+    text-decoration: none;
+    color: #161616;
+}
+
+#blog {
+    background-color: red;
+}
+
+
+.right-corner {
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 24px;
     row-gap: 24px;
     margin-bottom: 50px;
     margin-left: 150px;
-    margin-right: 100px;
+    margin-right: 100px; */
+    margin-right: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 24px;
+    margin-bottom: 50px;
 }
 
 
@@ -80,6 +139,7 @@
     border: 1px solid rgba(128, 128, 128, 0.387);
     border-radius: 10px;
 }
+
 
 .transfer-banner {
     width: 312px;
@@ -106,7 +166,10 @@
     gap: 30px;
     margin-top: 20px;
     margin-left: 10px;
+    margin-bottom: 10px;
 }
+
+/* Footer Section Design Start Here */
 
 footer {
     padding: 30px 30px;
@@ -114,6 +177,7 @@ footer {
     align-items: center;
     text-align: center;
     background-color: black;
+    font-family: 'Poppins', sans-serif;
 }
 
 #footer-heading {
@@ -137,4 +201,26 @@ nav a {
     color: #B9B9B9;
     margin-right: 10px;
     font-weight: 300px;
+}
+
+/* match Design Start Here */
+
+.live-match {
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.387);
+    border-radius: 10px;
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    margin-left: 25px;
+}
+
+.match-info {
+    text-align: center;
 }
