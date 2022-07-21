@@ -5,7 +5,7 @@
 }
 
 /* Google font useing here */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 /* Banner Section design start here */
 .container {
@@ -183,7 +183,7 @@ footer {
 #footer-heading {
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 40px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -223,4 +223,55 @@ nav a {
 
 .match-info {
     text-align: center;
+}
+
+/* Media Query for mobile view Design Here Start */
+
+@media only screen and (max-width:767px) {
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 1000px;
+
+    }
+
+    .transfer-lives {
+        margin-top: 300px;
+    }
+
+    .left-corner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-corner {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
 }
